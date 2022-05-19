@@ -80,6 +80,10 @@ main {
     align-items: center;
 }
 
+.announcement-container {
+    margin-top: 3%;
+}
+
 .tile-container {
     display: grid;
     margin: 4% auto;
