@@ -76,27 +76,13 @@ function stopGame() {
 // To announce winner or draw
 function announce(str) {
     document.querySelector('.announcement').textContent = str;
-    let myTimeout = setTimeout(alertResult, 100);
-    
+
     if (str === 'Player 1 Won!') {
         player1ScoreCount++;
         player1Score.textContent = player1ScoreCount;
-        myTimeout;
     } else if (str === 'Player 2 Won!') {
         player2ScoreCount++;
         player2Score.textContent = player2ScoreCount;
-        myTimeout;
-    }
-}
-
-// To alert results
-function alertResult() {
-    if (!boardArr.includes('')) {
-        alert('Game Draw')
-    } else if (playerTurnCount % 2 == 0) {
-        alert('Player 1 Won!')
-    } else {
-        alert('Player 2 Won!')
     }
 }
 
@@ -162,6 +148,3 @@ tiles.forEach(function (tile) {
 nextRoundBtn.addEventListener('click', handleNextRoundBtn);
 
 newGameBtn.addEventListener('click', handleNewGameBtn);
-
-
-

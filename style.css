@@ -5,7 +5,7 @@
 
 body {
     margin: auto;
-    max-width: 800px;
+    max-width: 480px;
     background-image: url('img/background-3.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,13 +15,14 @@ body {
 header {
     text-align: center;
     margin: auto;
-    width: 40%;
+    width: 55%;
 }
 
 .game-name {
     background-color: #e8735d;
     border: 15px solid #e8735d;
     border-radius: 15px;
+    font-size: 170%;
 }
 
 main {
@@ -37,26 +38,30 @@ main {
 }
 
 .upper-container {
-    margin: 5% auto;
-    width: 60%;
+    margin: 3% auto;
+    width: 80%;
     background-color: #e8735d;
     border: 15px solid #e8735d;
     border-radius: 15px;
 }
 
+.player-turn-container {
+    margin-top: 5%;
+}
+
 .scoreboard-title {
-    font-size: 180%;
+    font-size: 150%;
+    margin-top: 0;
 }
 
 .scoreboard-container {
     margin: 0 auto;
     font-size: 160%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 50% 50%;
-    width: 45%;
+    width: 58%;
     max-height: 160px;
-
 }
 
 .sushi-img {
@@ -65,12 +70,22 @@ main {
     max-height: 100%;
 }
 
+.player-1-score-board {
+    display: flex;
+    align-items: center;
+}
+
+.player-2-score-board {
+    display: flex;
+    align-items: center;
+}
+
 .tile-container {
     display: grid;
-    margin: 5% auto;
+    margin: 4% auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    max-width: 550px;
+    max-width: 480px;
     background-color: #e7a15c;
     border: 15px solid #e7a15c;
     border-radius: 15px;
@@ -85,8 +100,8 @@ main {
     justify-content: center;
     align-items: center;
     background-size: contain;
-    min-height: 150px;
-    min-width: 150px;
+    min-height: 140px;
+    min-width: 140px;
 }
 
 .x-img {
@@ -104,11 +119,21 @@ main {
     background-position: center;
 }
 
+.announcement {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 180%;
+    background-color: #e7a15c;
+    border: 0px solid #e8735d;
+    border-radius: 10px;
+    box-shadow: inset 0 #e8735d;
+}
+
 button {
     background-color: #e8735d;
-    margin: 2%;
+    margin: 0 2% 2% 2%;
     padding: 1% 3%;
-    font-size: 150%;
+    font-size: 120%;
     border: #e8735d;
     border-radius: 5px;
 }
