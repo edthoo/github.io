@@ -1,4 +1,4 @@
-# Tic-Tac-Roe version 0.3
+# [Tic-Tac-Roe version 0.3](https://edthoo.github.io/tictacroe/)
 
 ## Introduction
 This is a basic tic-tac-toe app made with html, css, & javascript. The goal of this app is learn and test my current skill level.
