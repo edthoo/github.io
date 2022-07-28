@@ -5,7 +5,7 @@
 
 body {
     margin: auto;
-    max-width: 480px;
+    max-width: 640px;
     background-image: url('img/background-3.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,8 +20,8 @@ header {
 
 .game-name {
     background-color: #e8735d;
-    border: 15px solid #e8735d;
-    border-radius: 15px;
+    border: 1vh solid #e8735d;
+    border-radius: 1vh;
     font-size: 170%;
 }
 
@@ -41,8 +41,8 @@ main {
     margin: 3% auto;
     width: 80%;
     background-color: #e8735d;
-    border: 15px solid #e8735d;
-    border-radius: 15px;
+    border: 1vh solid #e8735d;
+    border-radius: 1vh;
 }
 
 .player-turn-container {
@@ -61,7 +61,7 @@ main {
     grid-template-columns: 40% 60%;
     grid-template-rows: 50% 50%;
     width: 58%;
-    max-height: 160px;
+    max-height: 12vh;
 }
 
 .sushi-img {
@@ -81,7 +81,7 @@ main {
 }
 
 .player-turn-container {
-    margin-top: 10%;
+    margin-top: 8vh;
 }
 
 .tile-container {
@@ -89,23 +89,29 @@ main {
     margin: 4% auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    max-width: 480px;
+    max-width: 30vw;
     background-color: #e7a15c;
-    border: 15px solid #e7a15c;
-    border-radius: 15px;
+    border: 1vh solid #e7a15c;
+    border-radius: 1vh;
+}
+
+@media (max-width: 480px) {
+    .tile-container{
+        max-width: 100%;
+    }
 }
 
 .tile {
-    border: 5px solid #e7a15c;
-    border-radius: 15px;
-    box-shadow: inset 0 0 20px #e7a15c;
+    margin: .5vh;
+    border-radius: 1vh;
+    box-shadow: inset 0 0 1.5vh #e7a15c;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: contain;
-    min-height: 140px;
-    min-width: 140px;
+    min-height: 10vh;
+    min-width: 8vw;
 }
 
 .x-img {
@@ -129,7 +135,7 @@ main {
     font-size: 180%;
     background-color: #e7a15c;
     border: 0px solid #e8735d;
-    border-radius: 10px;
+    border-radius: 1vh;
     box-shadow: inset 0 #e8735d;
 }
 
@@ -139,5 +145,5 @@ button {
     padding: 1% 3%;
     font-size: 120%;
     border: #e8735d;
-    border-radius: 5px;
+    border-radius: .6vh;
 }
